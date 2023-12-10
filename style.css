@@ -93,6 +93,13 @@ main {
     padding-inline: .5rem;
     border-radius: .5rem;
     margin-bottom: .5rem;
+    cursor: pointer;
+    transition: scale 300ms ease;
+}
+
+.categories:hover,
+.categories:active {
+    scale: 1.05;
 }
 
 .img-and-bold {
@@ -146,13 +153,22 @@ button {
     color: var(--white);
     padding-block: 1rem;
     margin-top: .5rem;
+    border: none;
     border-radius: 1.7rem;
     font-size: 1.11rem;
     font-weight: 700;
+    cursor: pointer;
+    transition: scale 300ms ease;
+}
+
+button:hover,
+button:active {
+    background: linear-gradient(to bottom, var(--bg-slate-blue), var(--bg-royal-blue));
+    scale: 1.05;
 }
 
 
-@media (min-width: 580px) {
+@media (min-width: 500px) {
     .container {
         display: flex;
         flex-basis: 700px;
